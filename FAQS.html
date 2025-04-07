@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Section</title>
+    <link rel="stylesheet" href="FAQ.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">EMIT</a>
+        <div class="links">
+            <a href="Index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="Programs.html">Programs</a>
+            <a href="Contact.html">Contact</a>
+            <li><a href="registration.html">Volunteer</a></li>
+        </div>
+    </nav>
+    <section class="faq">
+        <h2 class="separator">Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <button class="faq-question">What is EmpowerIT? <span>+</span></button>
+            <div class="faq-answer">EmpowerIT is a non-profit organization focused on technology education and cybersecurity awareness.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">How can I get involved? <span>+</span></button>
+            <div class="faq-answer">You can volunteer, attend workshops, or donate to support our mission.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Are the training sessions free? <span>+</span></button>
+            <div class="faq-answer">Yes! Most of our training sessions and workshops are free of charge.</div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 EmpowerIT. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll(".faq-question").forEach(button => {
+            button.addEventListener("click", () => {
+                button.classList.toggle("active");
+                let answer = button.nextElementSibling;
+                answer.style.display = answer.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
+</body>
+</html>

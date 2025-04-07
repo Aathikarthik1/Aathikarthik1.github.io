@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="empowerIT, technology, cybersecurity, digital, education">
+    <meta name="description" content="EmpowerIT is a NC-based non-profit that focuses on empowering individuals with the tools and knowledge to make informed decisions about their digital lives.">
+    <meta name="author" content="EmpowerIT">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="login-container">
+        <form action="action_page.php" method="post">
+            <h2>Login to Your Account</h2>
+            <div class="img-container">
+                <img src="img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="input-group">
+                <label for="uname">Username</label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+            </div>
+
+            <div class="input-group">
+                <label for="psw">Password</label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <div class="options">
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+
+            <button type="button" class="btn cancel-btn">Cancel</button>
+        </form>
+    </div>
+</body>
+</html>

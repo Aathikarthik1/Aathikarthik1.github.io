@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+/* Navigation Links */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00ffcc;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #00ffcc;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Buttons */
+.login {
+    display: flex;
+    gap: 15px;
+}
+
+.login button {
+    background: #00ffcc;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.login button:hover {
+    background: #009999;
+    color: white;
+}
+
+/* About Section */
+.left {
+    background-color: #e6faff;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.left h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.left p {
+    font-size: 20px;
+    line-height: 1.6;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.left h1:hover ~ .hidden-para {
+    opacity: 1;
+}
+
+/* About Section Styling */
+.about-section {
+    background-color: beige;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 20px;
+    line-height: 1.6;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.about-section h2:hover ~ .hidden-para1 {
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.footer-links a {
+    color: #00ffcc;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Team Section Styling */
+.team-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+}
+
+.team-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Horizontal Scroll */
+.team-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.team-wrapper {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Team Card */
+.team-card {
+    background: white;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.team-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 3px 0;
+}
+
+/* Hover Effect */
+.team-card:hover {
+    transform: scale(1.05);
+}
+
+/* Social Media Icons */
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    font-size: 30px;
+    color: white;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #00ffcc;
+}
+
+/* Smooth Section Fade-in Effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}

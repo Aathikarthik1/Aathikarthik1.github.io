@@ -1,0 +1,110 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Login Container */
+.login-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+/* Form Heading */
+h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #333;
+}
+
+/* Input Group */
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #038d5a;
+}
+
+/* Cancel Button */
+.cancel-btn {
+  background-color: #f44336;
+  margin-top: 10px;
+}
+
+.cancel-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Avatar */
+.img-container {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 80px;
+  border-radius: 50%;
+}
+
+/* Remember Me & Forgot Password */
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.options a {
+  color: #04AA6D;
+  text-decoration: none;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 400px) {
+  .login-container {
+      width: 90%;
+  }
+}
