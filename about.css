@@ -95,54 +95,62 @@ nav ul li a:hover::after {
 }
 
 /* About Section */
-.left {
-    background-color: #e6faff;
-    padding: 80px 10%;
-    text-align: center;
-}
-
-.left h1 {
-    font-size: 50px;
-    font-weight: 700;
-    margin-bottom: 10px;
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f5f5f5;
     color: #333;
-}
-
-.left p {
-    font-size: 20px;
-    line-height: 1.6;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.left h1:hover ~ .hidden-para {
-    opacity: 1;
-}
-
-/* About Section Styling */
-.about-section {
-    background-color: beige;
-    padding: 60px 10%;
+  }
+  
+  h1 {
     text-align: center;
-}
-
-.about-section h2 {
-    font-size: 45px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.about-section p {
-    font-size: 20px;
-    line-height: 1.6;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.about-section h2:hover ~ .hidden-para1 {
-    opacity: 1;
-}
+    margin-bottom: 20px;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card h2 {
+    margin: 15px 0 10px;
+  }
+  
+  .card p {
+    padding: 0 15px 20px;
+  }
+  
+  /* Hover Effects */
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  /* Sections */
+  .left, .about-section {
+    margin-bottom: 60px;
+  }
+  
 
 /* Footer */
 footer {
